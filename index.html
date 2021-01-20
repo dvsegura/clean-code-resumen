@@ -47,19 +47,64 @@
         <section>
             <h2>Introducción</h2>
             <article>
-                <p>*La maestria se consigue de dos formas: <b>CONOCIMIENTOS</b> y <b>TRABAJO.</b></p>
+                <p>*La maestría se consigue de dos formas: <b>CONOCIMIENTOS</b> y <b>TRABAJO.</b></p>
                 <p>Debe adquirir el conocimiento de los principios, patrones, prácticas y heurística propios de un maestro, y dominar dichos conocimentos a través de la práctica.</p>
                 <p>*<u>Apreder a crear código limplio es complicado.</u></p>
-                <p>Requiere algo más que conocer principios y patrones. Tiene que sudar. Debe practicarlo y fallar. Debe ver cómo agonizan en cada decisión y el precio que pagan por tomar decisiones equivocadas</p>
+                <p>Requiere algo más que conocer principios y patrones. Tiene que sudar. Debe practicarlo y fallar. Debe ver cómo agonizan en cada decisión y el precio que pagan por tomar decisiones equivocadas.</p>
             </article>
         </section>
         <section>
             <h2>Capítulo 1</h2>
             <article>
                 <h3>Hágase el código</h3>
-                <p>El codigo nunca desaparecerá, ya que representa los <b>detalles de los requisitos</b>. En algun nivel, dichos detalles no se pueden ignorar ni abstraer; deben espesificarse, y para especificar requisitos de forma que un equipo pueda ejecutarlos se necesita la <b>programación</b>. Dicha especificación es el código</b> </p>
+                <p>El código nunca desaparecerá, ya que representa los <b>detalles de los requisitos</b>. En algún nivel, dichos detalles no se pueden ignorar ni abstraer; deben espesificarse, y para especificar requisitos de forma que un equipo pueda ejecutarlos se necesita la <b>programación</b>. Dicha especificación es el código</b> </p>
                 <dfn>El que piense que el código va a desaparecer es como el matemático que espera que un día las matemáticas no sean formales.</dfn>
-                <p>Recuerde que el código es basicamente el lenguaje en el que expresamos los requisitos en última instancia</p>
+                <p>Recuerde que el código es básicamente el lenguaje en el que expresamos los requisitos en última instancia</p>
+            </article>
+            <article>
+                <h3>Código Incorrecto</h3>
+
+            </article>
+        </section>
+        <section>
+            <h2>Cápitulo 2 Nombres con sentido</h2>
+            <h3>Reglas básicas para crear nombres correctos.</h3>
+            <article>
+                <h3>Usar nombres que revelen las intensiones</h3>
+                <p>Elegir nombres correctos lleva tiempo pero ahora trabajo.</p>
+                <p>El nombre de una variable, función o clase debe responder a una serie de cuestiones básicas:</p>
+                <ul>
+                    <li>¿Por qué existe?</li>
+                    <li>¿Qué hace?</li>
+                    <li>¿Cómo se usa?</li>
+                </ul> 
+                <p>Ejemplos:</p>               
+                <div>
+                   <code>int elapsedTimeInDays; </code>
+                </div>
+                <div>   
+                    <code>int daysSinceCreation;</code>
+                </div>
+                <div>
+                    <code>int daysSinceModification;</code>
+                </div>
+                <div>    
+                    <code>int fileAgeDays;</code>                
+                </div>                 
+            </article>
+            <p>...</p>
+            <article>
+                <h3>Evitar la desinformación</h3>
+                <ul>
+                    <li>Evitar palabras cuyo significado de aleje del que pretendemos. Por ejemplo, <b><del>hp</del></b>, <b><del>aix</del></b> y <b><del>sco</del></b> Son variables pobres.</li>
+                    <li>No haga referencia a un grupo de cuentas como <b>accountList</b> a menos que sea una lista (List)</li>
+                    <li>Evite usar nombres con variaciones mínimas Ej. <b><del>XYZControllerForEfficentHandlingOfStrings</del></b> y <b><del>XYZControllerForEfficentStorageOfStrings</del></b>.</li>
+                    <li>Evite usar l mínuncula y la O mayúsculas como nombre de variables.El problema, evidentemente es que se parecen a las constantes númericas 0 y 1 respectivamente.</li>
+                </ul>    
+            </article>
+            <article>
+                <h3>Realizar disticiones con sentido</h3>
+                <p>Evite distinciones con el mismo significado.Ej.<b><del>Product</del></b> y <b><del>theProduct</del></b></p>
             </article>
         </section>
     </div>
