@@ -115,8 +115,40 @@
                 <h3>Usar nombres que se puedan buscar</h3>
                 <p>Los nombres de una letra y las constantes numéricas tiene un problema: no son fáciles de localizar en el código</p>
                 <p>El nombre <b>e</b> es una opción muy pobre para variables que el programador tenga que buscar</p>
-                <p><b><u>Nota</u></b>: Usar nombres de una sola letra que solo se puedan usar como variables locales dentro de métodos breves</p>
+                <p><b><u>Nota</u></b>: Usar nombres de una sola letra que solo se puedan usar como variables locales dentro de métodos breves.</p>                
             </article>
+            <article>
+                <h3>Evitar codificaciones</h3>
+                <p>Ya tenemos suficientes codificaciones como para tener que añadir otras nuevas</p>
+                <p>Al codificar información de tipos o ámbitos en un nombre se dificulta la decodificación</p>
+                <p>Además es uan carga mental innecesaria a la hora de itentar solucionar un problema</p>
+                <p>Los nombres codificados resultan inpronunciables y suelen escribirse de forma incorrecta</p>
+            </article>
+            <article>
+                <h3>Notación Húngara (HN)</h3>
+                <p>En la actualidad la NH y otras formas de codificación de tipo no es más que un impedimento.
+                    <ul>
+                        <li>Hacen que pueda ser más complicado cambiarle el nombre o el tipo de una variable o clase. </li>
+                        <li>Dificultan la legibilidad del código</li>
+                        <li>Pueden hacer que el sistema de codificación confunda al lector</li>                        
+                    </ul>    
+                    <p>En los leguajes omodernos disponemos de sistemas de tipado más completos y los compliladores recuerdan los tipos y los aplican, por lo que no es necesario usar la HN </p>
+            </article>
+            <article>
+                <h3>Prefijos de miembros</h3>
+                <p>No es necesario añadirle prefijos a los nombres de variables. Son un indicio de código antiguo</p>
+            </article>
+                <article>
+                    <h3>Interfaces e implementaciones</h3>
+                    <p>Existe un caso especial para las codificaciones</p>
+                    <p>Mejor codificar la implementación.Ej.<b>ShapeFactoryImp</b> o incluso, <b>CShapeFactory</b>, que codificar la interfaz</p>                    
+                </article>
+                <article>
+                    <h3>Evitar asignaciones mentales</h3>
+                    <p>Los lectores no tiene que traducir mentalmente sus nombres en otros que ya conocen.</p>
+                    <p>Es un problema de los nombres de variables de una sola letra, estos son tradicionales en contadores de bucles(i,j,k) si su ambito es muy reducido y no hay conflicto con otros nombres. Sin embargo, en otros contextos pueden ser un nombre de variable muy pobre</p>
+                    <p>Una diferencia entre un programador inteligente y un programador profesional es que este último sabe que la claridad es lo que importa.<b>Los profesionales usan sus poderes para hacer el bien y crean código que otra puedan entender</b></b></p>
+                </article>
         </section>
     </div>
 </body>
