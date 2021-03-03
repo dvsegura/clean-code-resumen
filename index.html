@@ -138,17 +138,51 @@
                 <h3>Prefijos de miembros</h3>
                 <p>No es necesario añadirle prefijos a los nombres de variables. Son un indicio de código antiguo</p>
             </article>
-                <article>
-                    <h3>Interfaces e implementaciones</h3>
-                    <p>Existe un caso especial para las codificaciones</p>
-                    <p>Mejor codificar la implementación.Ej.<b>ShapeFactoryImp</b> o incluso, <b>CShapeFactory</b>, que codificar la interfaz</p>                    
-                </article>
-                <article>
-                    <h3>Evitar asignaciones mentales</h3>
-                    <p>Los lectores no tiene que traducir mentalmente sus nombres en otros que ya conocen.</p>
-                    <p>Es un problema de los nombres de variables de una sola letra, estos son tradicionales en contadores de bucles(i,j,k) si su ambito es muy reducido y no hay conflicto con otros nombres. Sin embargo, en otros contextos pueden ser un nombre de variable muy pobre</p>
-                    <p>Una diferencia entre un programador inteligente y un programador profesional es que este último sabe que la claridad es lo que importa.<b>Los profesionales usan sus poderes para hacer el bien y crean código que otra puedan entender</b></b></p>
-                </article>
+            <article>
+                <h3>Interfaces e implementaciones</h3>
+                <p>Existe un caso especial para las codificaciones</p>
+                <p>Mejor codificar la implementación.Ej.<b>ShapeFactoryImp</b> o incluso, <b>CShapeFactory</b>, que codificar la interfaz</p>                    
+            </article>
+            <article>
+                <h3>Evitar asignaciones mentales</h3>
+                <p>Los lectores no tiene que traducir mentalmente sus nombres en otros que ya conocen.</p>
+                <p>Es un problema de los nombres de variables de una sola letra, estos son tradicionales en contadores de bucles(i,j,k) si su ambito es muy reducido y no hay conflicto con otros nombres. Sin embargo, en otros contextos pueden ser un nombre de variable muy pobre</p>
+                <p>Una diferencia entre un programador inteligente y un programador profesional es que este último sabe que la claridad es lo que importa.</b></p>
+                <p><b>Los profesionales usan sus poderes para hacer el bien y crean código que otros puedan entender.</b></p>
+            </article>
+            <article>
+                <h3>Nombres de clase</h3>
+                <p>Las clases y los objetos deben tener nombres o fraces como <b>Customer</b>, <b>WikiPage</b>, <b>Account</b>, <b>AddressParser</b></p>
+                <p><u>Nota</u>: Evitar palabras como <del>Manager</del>, <del>Processor</del>, <del>Data</del> o <del>Info</del>, en el nombre de una clase.</p>
+                <p>El nombre de una clase no dede ser un verbo.</p>
+            </article> 
+            <article>
+                <h3>Nombres de métodos</h3>
+                <p>Los métodos deben tener nombres de verbo como <b>postPayment</b>, <b>deletePage</b> o <b>save</b>.</p>
+                <p>Los métodos de acceso, modificación o los predicados deben tener como nombre su valor y usar como prefijos <b>get</b>, <b>set</b> e <b>is</b>, de acuerdo a los estándares de <b>javabean.</b></p>
+                <pre>
+                    <code>
+                    string name = employee.getName();
+                    customer.setName("miki");
+                    if(paycheck.isPosted())...
+                </code>
+                </pre>
+                <p>Al sobre cargar constructores, use métodos de factoría estáticos con nombres que describan los argumentos. Por ejemplo:
+                    <pre><code>Complex fulcrumPoint = Complex.FromRealNumber(23.0);</code></pre>
+                    <p>Es mejor que:</p>
+                    <pre><code>Complex fulcrumPoint = new Complex(23.0);</code></pre>
+                </p>
+            </article>
+            <article>
+                <h3>No se exceda con el atractivo</h3>
+                <p>Opte por la calidad antes que por el entretenimiento.</p> 
+                <p>No recurra a bromas culturales como <del>eatMyShorts()</del> si quiere decir <b>abort()</b>.</p>
+                <dfn>"Diga lo que piense. Piense lo que diga".</dfn>                
+            </article>  
+            <article>
+                <h3>Una palabra por concepto</h3>
+                <p>Elija una palabra para cada concepto abstracto y manténgala.</p>
+            </article> 
         </section>
     </div>
 </body>
